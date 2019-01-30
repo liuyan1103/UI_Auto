@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Login</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">31.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th>Authors</th><th># of<br/>Scenarios</th><th>Running Counts</th><th>Parameters</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Login &#8212; failed</th></tr>
+<tr class="failedodd"><td>cn.jybd.www.testCase.LoginPage_001_LoginSuccessFunction_Test</td><td><a href="#m-1747119038"><b>loginSuccessFunction</b>  </a></td><td>lijiang</td><td class="numi">1</td><td>1</td><td></td><td>1548845019620</td><td class="numi">21592</td></tr>
+<tr><th colspan="5">Login &#8212; passed</th></tr>
+<tr class="passedodd"><td>cn.jybd.www.testCase.TestngReportDemo</td><td><a href="#m-15399196"><b>testReport</b>  </a></td><td>lijiang</td><td class="numi">1</td><td>1</td><td></td><td>1548845042495</td><td class="numi">4398</td></tr>
+</table>
+<h1>Login</h1>
+<h2 id="m-1747119038" name="m-1747119038" >cn.jybd.www.testCase.LoginPage_001_LoginSuccessFunction_Test:loginSuccessFunction</h2>
+<div>
+<h3>Test Messages</h3>
+result\screenshot\2019_01_30_18_44_01_loginSuccessFunction.jpg<br/>
+<img src="../../result\screenshot\2019_01_30_18_44_01_loginSuccessFunction.jpg"/><br/>
+<h3>Failure</h3>
+<div class="stacktrace">java.lang.AssertionError: 超时!! 20 秒之后还没找到元素 [By.name: body]
+	at cn.jybd.www.util.SeleniumUtil.waitForElementToLoad(SeleniumUtil.java:213)
+	at cn.jybd.www.pageshelper.HomePageHelper.waitHomePageLoad(HomePageHelper.java:28)
+	at cn.jybd.www.testCase.LoginPage_001_LoginSuccessFunction_Test.loginSuccessFunction(LoginPage_001_LoginSuccessFunction_Test.java:20)
+... Removed 27 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m-15399196" name="m-15399196" >cn.jybd.www.testCase.TestngReportDemo:testReport</h2>
+<div>
+launch chrome browser instance<br/>
+Max the browser<br/>
+open baidu site<br/>
+退出浏览器<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,39 @@
+[2019-01-30 18:43:35] [INFO] 当前操作系统是:[Windows 10]
+[2019-01-30 18:43:35] [INFO] 启动测试浏览器：[chrome]
+[2019-01-30 18:43:37] [INFO] 最大化浏览器:chrome
+[2019-01-30 18:43:39] [INFO] 打开测试页面:[https://hebing.jybd.cn/member/index.php?act=login&op=index]
+[2019-01-30 18:43:39] [INFO] loginSuccessFunction 测试用例开始执行！
+[2019-01-30 18:43:39] [INFO] loginSuccessFunction 测试用例开始执行！
+[2019-01-30 18:43:40] [INFO] 开始检查登录页面元素
+[2019-01-30 18:43:40] [INFO] 开始查找元素[By.id: user_name]
+[2019-01-30 18:43:40] [INFO] 找到了元素 [By.id: user_name]
+[2019-01-30 18:43:40] [INFO] 开始查找元素[By.id: password]
+[2019-01-30 18:43:40] [INFO] 找到了元素 [By.id: password]
+[2019-01-30 18:43:40] [INFO] 开始查找元素[By.id: captcha]
+[2019-01-30 18:43:40] [INFO] 找到了元素 [By.id: captcha]
+[2019-01-30 18:43:40] [INFO] 开始查找元素[By.xpath: //*[@id="login_form"]/div[3]/input[1]]
+[2019-01-30 18:43:40] [INFO] 找到了元素 [By.xpath: //*[@id="login_form"]/div[3]/input[1]]
+[2019-01-30 18:43:40] [INFO] 检查登录页面元素完毕
+[2019-01-30 18:43:40] [INFO] 开始输入登录信息
+[2019-01-30 18:43:40] [INFO] 清除元素 [By.id: user_name]上的内容
+[2019-01-30 18:43:40] [INFO] 输入：[ceshi22] 到 [By.id: user_name]
+[2019-01-30 18:43:40] [INFO] 清除元素 [By.id: password]上的内容
+[2019-01-30 18:43:40] [INFO] 输入：[123456] 到 [By.id: password]
+[2019-01-30 18:43:40] [INFO] 输入：[8888] 到 [By.id: captcha]
+[2019-01-30 18:43:40] [INFO] 输入登录信息完毕
+[2019-01-30 18:43:40] [INFO] 点击元素 [By.xpath: //*[@id="login_form"]/div[3]/input[1]]
+[2019-01-30 18:43:40] [INFO] 开始查找元素[By.name: body]
+[2019-01-30 18:44:01] [ERROR] 超时!! 20 秒之后还没找到元素 [By.name: body]
+[2019-01-30 18:44:01] [WARN] loginSuccessFunction 测试用例执行失败！
+[2019-01-30 18:44:01] [INFO] [LoginPage_001_LoginSuccessFunction_Test] 截图成功，保存在：[ result/screenshot/LoginPage_001_LoginSuccessFunction_Test.png ]
+[2019-01-30 18:44:01] [WARN] loginSuccessFunction 测试用例执行失败！
+[2019-01-30 18:44:01] [INFO] [2019_01_30_18_44_01_loginSuccessFunction] 截图成功，保存在：[ result\screenshot\2019_01_30_18_44_01_loginSuccessFunction.jpg ]
+[2019-01-30 18:44:02] [INFO] 关闭浏览器
+[2019-01-30 18:44:02] [INFO] testReport 测试用例开始执行！
+[2019-01-30 18:44:02] [INFO] testReport 测试用例开始执行！
+[2019-01-30 18:44:06] [INFO] testReport 测试用例执行成功！
+[2019-01-30 18:44:06] [INFO] testReport 测试用例执行成功！
+[2019-01-30 18:44:06] [INFO] 执行成功的用例 = testReport
+[2019-01-30 18:44:06] [INFO] 执行失败的用例 = loginSuccessFunction
+[2019-01-30 18:44:06] [INFO] 执行成功的用例 = testReport
+[2019-01-30 18:44:06] [INFO] 执行失败的用例 = loginSuccessFunction

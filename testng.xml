@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="甲乙丙丁自动化测试">
+	<!-- driver的属性配置文件保存路径 -->
+	<parameter name="driverConfgFilePath" value="config/driver.properties" />
+	<!-- chrome,firefox,ghost和ie不区分大小写 -->
+	<parameter name="browserName" value="chrome" />
+	<!-- 页面元素10秒不出现超时时间 -->
+	<parameter name="timeOut" value="20" />
+	<!-- 定义测试的站点 -->
+	<parameter name="testurl" value="https://hebing.jybd.cn/member/index.php?act=login&amp;op=index" />
+
+	<!-- 定义测试模块，用test标签包围 -->
+	<test name="Login" preserve-order="true">
+		<packages>
+			<package name="cn.jybd.www.testCase" />
+		</packages>
+		<!--<classes>-->
+			<!--<class name="cn.jybd.www.testCase.TestngReportDemo"/>-->
+		<!--</classes>-->
+	</test>
+
+	<listeners>
+		 <!--arrow插件实现用例失败重跑以及生成测试报告-->
+
+		<!--TestResultListener   负责监听测试运行状态与结果-->
+		<listener class-name="cn.jybd.www.plugins.arrow.TestResultListener" />
+		<!--RetryListener 负责失败的用例重跑的监听器-->
+		<listener class-name="cn.jybd.www.plugins.arrow.RetryListener" />
+		<!--RetryListener 负责失败的用例重跑的监听器-->
+		<listener class-name="cn.jybd.www.plugins.arrow.PowerEmailableReporter" />
+
+
+		<!--表格测试报告-->
+		<listener class-name="cn.jybd.www.report.TestResultListener"/>
+		<listener class-name="cn.jybd.www.report.ExcelReporter"/>
+
+         <!--HTML测试报告-->
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<!--<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
+
+
+	</listeners>
+</suite>
